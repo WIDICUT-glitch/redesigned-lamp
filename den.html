@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Social Marketplace</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>🌍 Social Marketplace</h1>
+
+<!-- Post Section -->
+<section>
+    <h2>Create a Post</h2>
+    <textarea id="postInput" placeholder="What's on your mind?"></textarea>
+    <button onclick="addPost()">Post</button>
+</section>
+
+<section>
+    <h2>Community Posts</h2>
+    <div id="posts"></div>
+</section>
+
+<hr>
+
+<!-- Marketplace Section -->
+<section>
+    <h2>Sell an Item</h2>
+    <input type="text" id="itemName" placeholder="Item name">
+    <input type="text" id="itemPrice" placeholder="Price">
+    <button onclick="addItem()">Sell</button>
+</section>
+
+<section>
+    <h2>Marketplace</h2>
+    <div id="market"></div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
