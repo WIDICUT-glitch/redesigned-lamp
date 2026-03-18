@@ -1,0 +1,36 @@
+body {
+    font-family: Arial;
+    margin: 20px;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    color: #333;
+}
+
+section {
+    background: white;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+textarea, input {
+    width: 100%;
+    margin: 5px 0;
+    padding: 10px;
+}
+
+button {
+    padding: 10px;
+    background: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.post, .item {
+    background: #eee;
+    padding: 10px;
+    margin-top: 10px;
+}
