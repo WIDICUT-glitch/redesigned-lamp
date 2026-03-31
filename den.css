@@ -1,36 +1,63 @@
 body {
-    font-family: Arial;
-    margin: 20px;
-    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f5f7fa;
 }
 
-h1 {
-    color: #333;
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #0a66c2;
+    color: white;
+    padding: 15px 20px;
 }
 
-section {
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Hero */
+.hero {
+    text-align: center;
+    padding: 40px;
+    background: #e3f2fd;
+}
+
+/* Layout */
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+/* Cards */
+.card {
     background: white;
-    padding: 15px;
-    margin-bottom: 20px;
-    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-textarea, input {
+/* Inputs */
+input, textarea {
     width: 100%;
-    margin: 5px 0;
     padding: 10px;
+    margin: 10px 0;
 }
 
 button {
     padding: 10px;
-    background: blue;
+    background: #0a66c2;
     color: white;
     border: none;
     cursor: pointer;
-}
-
-.post, .item {
-    background: #eee;
-    padding: 10px;
-    margin-top: 10px;
 }
