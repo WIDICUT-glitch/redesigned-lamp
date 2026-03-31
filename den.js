@@ -1,20 +1,18 @@
-// Social posts
 function addPost() {
     let input = document.getElementById("postInput");
     let postText = input.value;
 
-    if (postText === "") return;
+    if (postText.trim() === "") return;
 
     let postDiv = document.createElement("div");
-    postDiv.className = "post";
-    postDiv.innerText = postText;
+    postDiv.textContent = postText;
+    postDiv.style.padding = "10px";
+    postDiv.style.borderBottom = "1px solid #ccc";
 
-    document.getElementById("posts").appendChild(postDiv);
-
+    document.getElementById("posts").prepend(postDiv);
     input.value = "";
 }
 
-// Marketplace items
 function addItem() {
     let name = document.getElementById("itemName").value;
     let price = document.getElementById("itemPrice").value;
@@ -22,11 +20,9 @@ function addItem() {
     if (name === "" || price === "") return;
 
     let itemDiv = document.createElement("div");
-    itemDiv.className = "item";
     itemDiv.innerHTML = `<strong>${name}</strong> - $${price}`;
+    itemDiv.style.padding = "10px";
+    itemDiv.style.borderBottom = "1px solid #ccc";
 
-    document.getElementById("market").appendChild(itemDiv);
-
-    document.getElementById("itemName").value = "";
-    document.getElementById("itemPrice").value = "";
+    document.getElementById("market").prepend(itemDiv);
 }
